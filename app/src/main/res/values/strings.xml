@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">软件名</string>
+    <string name="phone">手机号码：</string>
+    <string name="notice1">请输入您的手机号码</string>
+    <string name="icon_description"></string>
+    <string name="password">   密   码 ：</string>
+    <string name="notice2">请输入您的密码</string>
+    <string name="login">登录</string>
+    <string name="box_number">柜体编号：</string>
+    <string name="notice3">请输入柜体编号</string>
+    <string name="input_box_number_next">下一步</string>
+    <string-array name="box_size">
+        <item>大箱</item>
+        <item>中箱</item>
+        <item>小箱</item>
+        <item>超小箱</item>
+    </string-array>
+</resources>

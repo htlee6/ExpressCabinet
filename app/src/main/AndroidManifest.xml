@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lihaotian.kuaidi"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="绿色情驿"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeliverOneActivity"
+            android:label="寄件——选择柜体"
+            android:parentActivityName=".MenuActivity"/>
+        <activity android:name=".DeliverTwoActivity"
+            android:label="寄件——确认订单信息"
+            android:parentActivityName=".DeliverOneActivity"/>
+        <activity android:name=".MenuActivity"
+            android:label="功能菜单"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".GetExpActivity"
+            android:label="取件"
+            android:parentActivityName=".MenuActivity" />
+        <activity android:name=".ForgetPasswordActivity"
+            android:label="忘记密码"
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".RegisterActivity"
+            android:label="注册"
+            android:parentActivityName=".LoginActivity"></activity>
+        <activity android:name=".DeliverThreeActivity"
+            android:label="寄件——完成投递"
+            android:parentActivityName=".DeliverTwoActivity"></activity>
+    </application>
+
+</manifest>

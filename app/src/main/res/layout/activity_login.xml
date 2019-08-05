@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ivory"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/icon_image"
+        android:src="@drawable/icon"
+        android:paddingTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/icon_description"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="绿色情驿"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#7adfb8"
+            android:textSize="40dp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="——智能快递柜系统"
+            android:layout_marginRight="8dp"
+            android:textAlignment="viewEnd"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/part1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/phone"
+            android:textColor="?attr/actionMenuTextColor" />
+
+        <EditText
+            android:id="@+id/input_phone"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="@string/notice1"
+            android:maxLength="11"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/part2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/password"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/notice2"
+            android:inputType="textPassword"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="279.5dp"
+        android:layout_height="46.5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_pic"
+        android:onClick="onLogin"
+        android:paddingBottom="100dp" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/part3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:text="@string/login">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            android:onClick="onRegister"
+            android:text="注册"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/forget_password"
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:onClick="onForgetPassword"
+            android:text="忘记密码"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+    </RelativeLayout>
+
+</LinearLayout>
